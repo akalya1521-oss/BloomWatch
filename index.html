@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BloomWatch</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Floating Background -->
+    <div class="flowers">
+        <span>🌸</span>
+        <span>🌼</span>
+        <span>🌿</span>
+        <span>🍃</span>
+        <span>🌷</span>
+        <span>🌺</span>
+    </div>
+
+    <main class="container">
+
+        <!-- Header -->
+
+        <header>
+
+            <h1>🌸 BloomWatch</h1>
+            <h3 id="greeting"></h3>
+
+            <p>Every second is a chance to bloom.</p>
+
+            <div class="liveDate" id="dateTime"></div>
+
+        </header>
+
+        <!-- Stopwatch Card -->
+
+        <section class="card">
+
+            <div class="timer">
+
+                <span id="hour">00</span>
+
+                <span>:</span>
+
+                <span id="minute">00</span>
+
+                <span>:</span>
+
+                <span id="second">00</span>
+
+                <span>:</span>
+
+                <span id="millisecond">000</span>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="buttons">
+
+                <button id="start">
+
+                    <i class="fa-solid fa-play"></i>
+
+                    Start
+
+                </button>
+
+                <button id="pause">
+
+                    <i class="fa-solid fa-pause"></i>
+
+                    Pause
+
+                </button>
+
+                <button id="reset">
+
+                    <i class="fa-solid fa-rotate-left"></i>
+
+                    Reset
+
+                </button>
+
+                <button id="lap">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                    Bloom Lap
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Statistics -->
+
+        <section class="stats">
+
+            <h2>🌱 Bloom Stats</h2>
+
+            <div class="statGrid">
+
+                <div class="box">
+
+                    <h3>Total Laps</h3>
+
+                    <p id="totalLaps">0</p>
+
+                </div>
+
+                <div class="box">
+
+                    <h3>Fastest Lap</h3>
+
+                    <p id="fastLap">--</p>
+
+                </div>
+
+                <div class="box">
+
+                    <h3>Latest Lap</h3>
+
+                    <p id="latestLap">--</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Lap History -->
+
+        <section class="lapSection">
+
+            <div class="lapHeader">
+
+                <h2>🌼 Bloom Garden</h2>
+
+                <button id="download">
+
+                    <i class="fa-solid fa-download"></i>
+
+                    Export
+
+                </button>
+
+            </div>
+
+            <ul id="lapList">
+
+                <li class="empty">
+
+                    🌱 Your bloom journey starts here...
+
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- Footer -->
+<hr>
+        <footer>
+
+            🌸 Made with love • BloomWatch © 2026
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
